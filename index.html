@@ -287,19 +287,19 @@
   </footer>
 
   <!-- Scripts -->
-  <script>
-    // Script menú hamburguesa
-    const toggle = document.getElementById('menu-toggle');
-    const navLinks = document.getElementById('nav-links');
-    toggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  </script>
 <script>
-  // Cerrar el menú al hacer clic en cualquier enlace del nav
+  const toggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+  toggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('active');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  // Cerrar el menú al tocar un enlace
   document.querySelectorAll('#nav-links a').forEach(link => {
     link.addEventListener('click', () => {
-      document.getElementById('nav-links').classList.remove('active');
+      navLinks.classList.remove('active');
+      toggle.setAttribute('aria-expanded', 'false');
     });
   });
 </script>
@@ -369,6 +369,7 @@
 
 </body>
 </html>
+
 
 
 
