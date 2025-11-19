@@ -729,4 +729,40 @@ html {
 .boton-flotante i {
   font-size: 1.2rem;
 }
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    z-index: 10001;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: var(--primary);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 10000;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: right;
+  }
+
+  .nav-links li a {
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px;
+    display: block;
+  }
+}
+
 
