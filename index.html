@@ -91,55 +91,55 @@
   </div>
 </section>
 
+<!-- Beneficios -->
+<section id="beneficios" class="beneficios">
+  <h2 data-aos="fade-up">¿Por qué elegir Yeza EducaIngenio?</h2>
+  <p class="intro">
+    Combinamos la pasión por la enseñanza con la experiencia en ingeniería para ofrecerte soluciones integrales que transforman el conocimiento en resultados tangibles.
+  </p>
 
-  <!-- Beneficios -->
-  <section id="beneficios" class="beneficios" class="icono"><i class="fas fa-lightbulb"></i></div>>
-    <h2 data-aos="fade-up">¿Por qué elegir Yeza EducaIngenio?</h2>
-    <p class="intro">
-      Combinamos la pasión por la enseñanza con la experiencia en ingeniería para ofrecerte soluciones integrales que transforman el conocimiento en resultados tangibles.
-    </p>
+  <h2>Beneficios</h2>
+  <p class="intro">Nuestros valores y competencias clave que guían cada proyecto</p>
 
-    <h2>Beneficios</h2>
-    <p class="intro">Nuestros valores y competencias clave que guían cada proyecto</p>
-
-    <div class="grid-beneficios">
-      <div class="beneficio">
-        <div class="icono"><i class="fas fa-briefcase"></i></div>
-        <h3>Experiencia combinada en educación y gestión</h3>
-        <p>Fusionamos conocimientos académicos con experiencia en gestión de proyectos para una planificación eficaz.</p>
-      </div>
-
-      <div class="beneficio">
-        <div class="icono"><i class="fas fa-lightbulb"></i></div>
-        <h3>Soluciones prácticas con innovación digital</h3>
-        <p>Implementamos tecnologías modernas para optimizar los procesos educativos.</p>
-      </div>
-
-      <div class="beneficio">
-        <div class="icono"><i class="fas fa-balance-scale"></i></div>
-        <h3>Responsabilidad y ética profesional</h3>
-        <p>Trabajamos con integridad, en función de los objetivos y estándares del sector educativo.</p>
-      </div>
-
-      <div class="beneficio">
-        <div class="icono"><i class="fas fa-comments"></i></div>
-        <h3>Claridad en la comunicación</h3>
-        <p>Establecemos canales de comunicación simples y efectivos para mantener una comprensión mutua.</p>
-      </div>
-
-      <div class="beneficio">
-        <div class="icono"><i class="fas fa-sync-alt"></i></div>
-        <h3>Capacidad de adaptación</h3>
-        <p>Personalizamos nuestras soluciones según las necesidades específicas de cada proyecto.</p>
-      </div>
-
-      <div class="beneficio">
-        <div class="icono"><i class="fas fa-bullseye"></i></div>
-        <h3>Orientación a resultados</h3>
-        <p>Nos enfocamos en lograr objetivos concretos con eficiencia y alto impacto.</p>
-      </div>
+  <div class="grid-beneficios">
+    <div class="beneficio">
+      <div class="icono"><i class="fas fa-briefcase"></i></div>
+      <h3>Experiencia combinada en educación y gestión</h3>
+      <p>Fusionamos conocimientos académicos con experiencia en gestión de proyectos para una planificación eficaz.</p>
     </div>
-  </section>
+
+    <div class="beneficio">
+      <div class="icono"><i class="fas fa-lightbulb"></i></div>
+      <h3>Soluciones prácticas con innovación digital</h3>
+      <p>Implementamos tecnologías modernas para optimizar los procesos educativos.</p>
+    </div>
+
+    <div class="beneficio">
+      <div class="icono"><i class="fas fa-balance-scale"></i></div>
+      <h3>Responsabilidad y ética profesional</h3>
+      <p>Trabajamos con integridad, en función de los objetivos y estándares del sector educativo.</p>
+    </div>
+
+    <div class="beneficio">
+      <div class="icono"><i class="fas fa-comments"></i></div>
+      <h3>Claridad en la comunicación</h3>
+      <p>Establecemos canales de comunicación simples y efectivos para mantener una comprensión mutua.</p>
+    </div>
+
+    <div class="beneficio">
+      <div class="icono"><i class="fas fa-sync-alt"></i></div>
+      <h3>Capacidad de adaptación</h3>
+      <p>Personalizamos nuestras soluciones según las necesidades específicas de cada proyecto.</p>
+    </div>
+
+    <div class="beneficio">
+      <div class="icono"><i class="fas fa-bullseye"></i></div>
+      <h3>Orientación a resultados</h3>
+      <p>Nos enfocamos en lograr objetivos concretos con eficiencia y alto impacto.</p>
+    </div>
+  </div>
+</section>
+
 
   <!-- Filosofía -->
   <section class="filosofia">
@@ -294,6 +294,14 @@
       navLinks.classList.toggle('active');
     });
   </script>
+	<script>
+  // Cerrar el menú al hacer clic en cualquier enlace del nav
+  document.querySelectorAll('#nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('nav-links').classList.remove('active');
+    });
+  });
+</script>
 
 <script>
   AOS.init({
@@ -360,4 +368,5 @@
 
 </body>
 </html>
+
 
